@@ -1,138 +1,199 @@
-/* GitHub Pages Viewport Fixes */
+/* GitHub Pages Complete Fix */
+
+/* Remove all problematic background and text effects */
+.experience-number {
+    font-size: 8rem !important;
+    line-height: 1 !important;
+    color: #ffeb00 !important;
+    font-weight: 700 !important;
+    text-shadow: none !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+    filter: none !important;
+    transform: none !important;
+    animation: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+.experience-number:hover {
+    color: #ffeb00 !important;
+    background: none !important;
+    transform: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+}
 
 /* Fix About Page Layout */
-.page-container {
+.section-2 {
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.section-2 .page-container {
+    width: 100% !important;
     height: auto !important;
-    min-height: calc(100vh - 200px) !important;
+    min-height: 60vh !important;
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
+    justify-content: center !important;
     padding: 40px 20px !important;
-    gap: 40px !important;
+    gap: 60px !important;
 }
 
-.left-section {
-    flex: 0 0 35% !important;
+.section-2 .left-section {
+    flex: 0 0 30% !important;
     display: flex !important;
     flex-direction: column !important;
-    justify-content: center !important;
     align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
 }
 
-.right-section {
+.section-2 .right-section {
     flex: 1 !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
+    max-width: 60% !important;
 }
 
-/* Fix Experience Number Size */
-.experience-number {
-    font-size: 8rem !important;
-    line-height: 1 !important;
-    margin-bottom: 1rem !important;
-}
-
-.experience-info {
-    font-size: 1.2rem !important;
-    line-height: 1.3 !important;
-}
-
-/* Fix Title Sizes */
-.title-uppercase {
-    font-size: 2.2rem !important;
+/* Fix text sizes */
+.section-2 .title-uppercase {
+    font-size: 2.5rem !important;
     line-height: 1.2 !important;
     margin-bottom: 1.5rem !important;
 }
 
-.description {
+.section-2 .description {
+    font-size: 1.1rem !important;
+    line-height: 1.6 !important;
+    margin: 1.5rem 0 2.5rem 0 !important;
+    color: #ccc !important;
+}
+
+.section-2 .experience-info {
+    font-size: 1.3rem !important;
+    line-height: 1.3 !important;
+    color: #fff !important;
+    margin-top: 1rem !important;
+}
+
+/* Fix Skills */
+.section-2 .skills-container {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+}
+
+.section-2 .skill-item {
+    margin-bottom: 0 !important;
+}
+
+.section-2 .skill-name {
     font-size: 1rem !important;
-    line-height: 1.5 !important;
-    margin: 1.5rem 0 2rem 0 !important;
+    font-weight: 600 !important;
 }
 
-/* Fix Skills Container */
-.skills-container {
-    max-height: none !important;
-    overflow: visible !important;
-}
-
-.skill-item {
-    margin-bottom: 1.2rem !important;
-}
-
-.skill-name {
+.section-2 .skill-percentage {
     font-size: 0.95rem !important;
+    font-weight: 700 !important;
 }
 
-.skill-percentage {
-    font-size: 0.9rem !important;
+.section-2 .skill-bar {
+    height: 6px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 3px !important;
+    margin-top: 8px !important;
+}
+
+.section-2 .skill-progress {
+    height: 100% !important;
+    background: linear-gradient(90deg, #ffeb00, #f3ca2f) !important;
+    border-radius: 3px !important;
+    transition: width 1.5s ease-out !important;
 }
 
 /* Fix Projects Section */
 .section-5 h2.title-uppercase {
-    font-size: 2.5rem !important;
+    font-size: 2.8rem !important;
     margin-bottom: 3rem !important;
+    text-align: center !important;
 }
 
 .project-title {
-    font-size: 1rem !important;
-    padding: 10px !important;
+    font-size: 1.1rem !important;
+    padding: 12px !important;
     font-weight: 600 !important;
+    background: rgba(0,0,0,0.8) !important;
+    border-radius: 8px 8px 0 0 !important;
 }
 
 .project-box {
-    min-height: 180px !important;
-    max-height: 180px !important;
+    min-height: 200px !important;
+    max-height: 200px !important;
+    border-radius: 0 0 8px 8px !important;
 }
 
-.col-project-box {
-    margin-bottom: 2rem !important;
+/* Fix Section Heights and Scrolling */
+.pp-scrollable {
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
 }
 
-.row-project-box {
-    margin-top: 0 !important;
+.scroll-wrap {
+    width: 100% !important;
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
 }
 
-/* Fix Section Heights */
-.pp-scrollable .vertical-centred {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+.scrollable-content {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
-.section {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+.vertical-centred {
+    width: 100% !important;
+    display: block !important;
 }
 
-/* Mobile Responsive Fixes */
+/* Mobile Responsive */
 @media (max-width: 768px) {
-    .page-container {
+    .section-2 .page-container {
         flex-direction: column !important;
-        padding: 20px 15px !important;
-        gap: 20px !important;
+        gap: 30px !important;
+        padding: 30px 15px !important;
     }
     
-    .left-section {
+    .section-2 .left-section {
         flex: none !important;
-        margin-bottom: 20px !important;
+    }
+    
+    .section-2 .right-section {
+        max-width: 100% !important;
     }
     
     .experience-number {
         font-size: 5rem !important;
     }
     
-    .title-uppercase {
-        font-size: 1.8rem !important;
+    .section-2 .title-uppercase {
+        font-size: 2rem !important;
     }
     
-    .description {
-        font-size: 0.9rem !important;
-    }
-    
-    .project-box {
-        min-height: 150px !important;
-        max-height: 150px !important;
+    .section-2 .description {
+        font-size: 1rem !important;
     }
 }
 
@@ -141,36 +202,30 @@
         font-size: 4rem !important;
     }
     
-    .title-uppercase {
-        font-size: 1.5rem !important;
+    .section-2 .title-uppercase {
+        font-size: 1.7rem !important;
     }
     
     .section-5 h2.title-uppercase {
-        font-size: 2rem !important;
+        font-size: 2.2rem !important;
     }
 }
 
-/* Fix Viewport Issues */
-.pagepiling .section {
-    min-height: 100vh !important;
-    display: flex !important;
-    align-items: center !important;
+/* Remove any texture or gradient effects that cause white screen */
+.text-texture,
+.experience-number.text-texture {
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    background-clip: initial !important;
+    color: #ffeb00 !important;
 }
 
-.scroll-wrap {
-    width: 100% !important;
-    height: 100% !important;
+/* Ensure proper contrast */
+.section-2 * {
+    text-shadow: none !important;
 }
 
-.scrollable-content {
-    width: 100% !important;
-    height: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-}
-
-.vertical-centred {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+.section-2 .experience-number {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3) !important;
 }
