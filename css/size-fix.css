@@ -1,0 +1,124 @@
+/* AGGRESSIVE SIZE FIXES - Override Everything */
+
+/* Force HTML font size to be smaller */
+html {
+    font-size: 10px !important;
+}
+
+/* Fix Experience Number - Make it normal size */
+.experience-number {
+    font-size: 4rem !important;
+    color: #ffeb00 !important;
+    background: none !important;
+    -webkit-text-fill-color: #ffeb00 !important;
+    text-shadow: none !important;
+    transform: none !important;
+    animation: none !important;
+    filter: none !important;
+}
+
+/* Fix All Headings */
+h1, .h1 { font-size: 2.5rem !important; }
+h2, .h2 { font-size: 2rem !important; }
+h3, .h3 { font-size: 1.7rem !important; }
+h4, .h4 { font-size: 1.4rem !important; }
+h5, .h5 { font-size: 1.2rem !important; }
+h6, .h6 { font-size: 1rem !important; }
+
+/* Fix Display Classes */
+.display-1 { font-size: 3rem !important; }
+.display-2 { font-size: 3.5rem !important; }
+
+/* Fix Title Classes */
+.title-uppercase { font-size: 1.8rem !important; }
+
+/* Fix About Section Layout */
+.page-container {
+    display: flex !important;
+    align-items: center !important;
+    padding: 20px !important;
+    gap: 30px !important;
+    height: auto !important;
+    min-height: 70vh !important;
+}
+
+.left-section {
+    flex: 0 0 25% !important;
+    text-align: center !important;
+}
+
+.right-section {
+    flex: 1 !important;
+}
+
+/* Fix Experience Info */
+.experience-info {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+}
+
+/* Fix Description */
+.description {
+    font-size: 0.9rem !important;
+    line-height: 1.4 !important;
+    margin: 15px 0 20px 0 !important;
+}
+
+/* Fix Skills */
+.skill-name {
+    font-size: 0.85rem !important;
+}
+
+.skill-percentage {
+    font-size: 0.8rem !important;
+}
+
+/* Fix Projects */
+.section-5 h2 {
+    font-size: 2rem !important;
+}
+
+.project-title {
+    font-size: 0.9rem !important;
+    padding: 8px !important;
+}
+
+.project-box {
+    height: 150px !important;
+    min-height: 150px !important;
+    max-height: 150px !important;
+}
+
+/* Fix All Sections */
+.section {
+    padding: 20px 0 !important;
+}
+
+.pp-scrollable .vertical-centred {
+    padding: 20px 0 !important;
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    html { font-size: 9px !important; }
+    
+    .experience-number { font-size: 3rem !important; }
+    .display-2 { font-size: 2.5rem !important; }
+    .title-uppercase { font-size: 1.4rem !important; }
+    
+    .page-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    
+    .left-section {
+        flex: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    html { font-size: 8px !important; }
+    
+    .experience-number { font-size: 2.5rem !important; }
+    .display-2 { font-size: 2rem !important; }
+}
