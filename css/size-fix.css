@@ -1,8 +1,8 @@
 /* BALANCED SIZE FIXES */
 
-/* Fix Experience Number - Normal white color, reasonable size */
+/* Fix Experience Number - Make it bigger */
 .experience-number {
-    font-size: 8rem !important;
+    font-size: 12rem !important;
     color: #fff !important;
     background: none !important;
     -webkit-text-fill-color: #fff !important;
@@ -21,6 +21,72 @@
 h1, .h1 { font-size: 3rem !important; }
 h2, .h2 { font-size: 2.5rem !important; }
 .title-uppercase { font-size: 2.2rem !important; }
+
+/* Make Resume page smaller */
+.section-3 h4.title-uppercase {
+    font-size: 1.2rem !important;
+}
+
+.section-3 h6.resume-type {
+    font-size: 1rem !important;
+}
+
+.section-3 .resume-study {
+    font-size: 0.9rem !important;
+}
+
+.section-3 .resume-date {
+    font-size: 0.8rem !important;
+}
+
+.section-3 .resume-text {
+    font-size: 0.85rem !important;
+}
+
+.section-3 .skill-tag {
+    font-size: 0.7rem !important;
+    padding: 3px 8px !important;
+}
+
+/* Make Projects page smaller */
+.section-5 h2 {
+    font-size: 2rem !important;
+}
+
+.project-name {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    margin: 0 0 6px 0 !important;
+    text-transform: uppercase !important;
+    letter-spacing: -.025em !important;
+    line-height: 1.33333 !important;
+}
+
+a.project-box {
+    display: block !important;
+    height: 150px !important;
+    border-radius: 8px !important;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3) !important;
+}
+
+a.project-box:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 12px 30px rgba(243, 202, 47, 0.2) !important;
+    text-decoration: none !important;
+}
+
+.col-project-box:hover .project-name {
+    color: #ffeb00 !important;
+}
+
+.col-project-box {
+    margin-bottom: 1.5rem !important;
+}
 
 /* Fix About Section Layout */
 .page-container {
