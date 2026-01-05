@@ -19,36 +19,53 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="css/style.css" rel="stylesheet" media="screen">
 <link href="css/github-fixes.css" rel="stylesheet" media="screen">
-<link href="css/size-fix.css?v=3" rel="stylesheet" media="screen">
+<link href="css/size-fix.css?v=4&t=1735659600" rel="stylesheet" media="screen">
 <style>
-/* DIRECT CSS OVERRIDES - BYPASS CACHE - FORCE APPLY */
-/* Experience number override */
-.section-2 .experience-number, .left-section .experience-number, div.experience-number { font-size: 20rem !important; color: #fff !important; }
-/* Home page */
-.display-2 { font-size: 2.5rem !important; }
-.subtitle-top { font-size: 0.9rem !important; }
-/* About page */
-.section-2 .title-uppercase { font-size: 1.2rem !important; }
-.section-2 .description { font-size: 0.75rem !important; }
+/* ULTIMATE CSS OVERRIDES - FORCE ALL CHANGES */
+body * { font-size: inherit !important; }
+/* Experience number - MASSIVE */
+.section-2 .experience-number, .left-section .experience-number, div.experience-number, .experience-number { 
+    font-size: 20rem !important; 
+    color: #fff !important; 
+    line-height: 1 !important;
+    font-weight: bold !important;
+}
+/* Home page - SMALLER */
+.section-1 .display-2, .display-2 { font-size: 2.5rem !important; }
+.section-1 .subtitle-top, .subtitle-top { font-size: 0.9rem !important; }
+/* About page - MUCH SMALLER */
+.section-2 .title-uppercase, .section-2 h2 { font-size: 1.2rem !important; }
+.section-2 .description, .section-2 p { font-size: 0.75rem !important; }
 .section-2 .skill-name { font-size: 0.7rem !important; }
 .section-2 .skill-percentage { font-size: 0.65rem !important; }
-.section-2 .experience-info { font-size: 0.6rem !important; }
-/* Resume page */
-.section-3 h4 { font-size: 0.85rem !important; }
-.section-3 h6 { font-size: 0.75rem !important; }
-.section-3 p { font-size: 0.65rem !important; }
+.section-2 .experience-info { font-size: 0.6rem !important; line-height: 1.2 !important; }
+/* Resume page - TINY */
+.section-3 h4, .section-3 .title-uppercase { font-size: 0.85rem !important; }
+.section-3 h6, .section-3 .resume-type { font-size: 0.75rem !important; }
+.section-3 p, .section-3 .resume-study, .section-3 .resume-date, .section-3 .resume-text { font-size: 0.65rem !important; }
 .section-3 .skill-tag { font-size: 0.55rem !important; padding: 2px 4px !important; }
-/* Projects page */
+/* Projects page - COMPACT */
 .section-5 h2 { font-size: 1.4rem !important; }
-.project-name { font-size: 0.75rem !important; }
-.project-box { height: 120px !important; }
-/* Contact page */
+.project-name, h5.project-name { font-size: 0.75rem !important; }
+.project-box, a.project-box { height: 120px !important; }
+/* Contact page - SMALLER */
 .section-7 h2 { font-size: 1.4rem !important; }
 .section-7 h3 { font-size: 1rem !important; }
 .section-7 h5 { font-size: 0.8rem !important; }
-/* Social links */
-.social-list-home { margin-top: 20px !important; display: block !important; }
-.social-list-home .icon { color: #fff !important; font-size: 20px !important; margin-right: 12px !important; transition: color 0.3s !important; }
+/* Social links - FORCE VISIBLE */
+.social-list-home { 
+    margin-top: 20px !important; 
+    display: block !important; 
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.social-list-home .icon { 
+    color: #fff !important; 
+    font-size: 20px !important; 
+    margin-right: 12px !important; 
+    transition: color 0.3s !important;
+    display: inline-block !important;
+}
 .social-list-home .icon:hover { color: #f3ca2f !important; }
 </style>
 <link rel="dns-prefetch" href="//api.github.com">
